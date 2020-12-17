@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>基础控件</title>
+</head>
+
+<body>
+  <form action="tijiao.php" method="POST">
+    <p>
+      请输入你的姓名：<input type="text">
+    </p>
+    <p>
+      报考院校：<input type="text" value="清华大学" disabled>
+    </p>
+    <p>
+      毕业院校：<input type="text" placeholder="请输入真实的毕业学校哦">
+    </p>
+    <p>性别：
+      <input id="nan" type="radio" name="sex" value="男" checked> <label for="nan">男</label>
+      <input id="wuman" type="radio" name="sex" value="女"><label for="wuman">女</label>
+    </p>
+    <p>
+      血型：
+      <label><input type="radio" name="bloodtype" value="A" checked> A</label>
+      <label><input type="radio" name="bloodtype" value="B"> B</label>
+      <label><input type="radio" name="bloodtype" value="C"> C</label>
+      <label><input type="radio" name="bloodtype" value="D"> D</label>
+      <label><input type="radio" name="bloodtype" value="AB"> AB</label>
+    </p>
+    <p>
+      爱好：
+      <label>
+        <input type="checkbox" name="hobby" value="足球"> 足球
+      </label>
+      <label>
+        <input type="checkbox" name="hobby" value="篮球"> 篮球
+      </label>
+      <label>
+        <input type="checkbox" name="hobby" value="羽毛球"> 羽毛球
+      </label>
+      <label>
+        <input type="checkbox" name="hobby" value="游泳"> 游泳
+      </label>
+    </p>
+    <p>
+      请输入密码：
+      <input type="password">
+    </p>
+    <p>
+      请选择你最喜欢的编程语言
+      <select>
+        <option value="JavaScript">JavaScript</option>
+        <option value="Java">Java</option>
+        <option value="PHP">PHP</option>
+        <option value="C++">C++</option>
+      </select>
+    </p>
+    <p>
+      留言：
+      <textarea cols="30" rows="10"></textarea>
+    </p>
+    <p>
+      <button>
+        简写提交
+      </button>
+    </p>
+    <p>
+      <input type="button" value="提交">
+    </p>
+    <p>
+      <input type="submit" value="提交按钮">
+    </p>
+    <p>
+      <input type="reset" value="重置表单">
+    </p>
+  </form>
+</body>
+
+</html>

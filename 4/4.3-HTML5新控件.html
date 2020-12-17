@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5新增表单控件</title>
+</head>
+
+<body>
+  <form action="">
+    <p>
+      颜色选择控件：
+      <input type="color">
+    </p>
+    <p>
+      日期选择：
+      <input type="date">
+    </p>
+    <p>
+      时间选择：
+      <input type="time">
+    </p>
+    <P>
+      电子邮件：
+      <input type="email">
+      <!-- 表单HTML5自带校验 -->
+    </P>
+    <p>
+      必填：
+      <input type="text" required>
+      <!-- 表单HTML5自带校验 -->
+    </p>
+    <p>
+      数字：
+      <input type="number" min="10" max="99">
+    </p>
+    <p>
+      拖拽条：
+      <input type="range" min="10" max="20">
+    </p>
+    <p>
+      搜索框：
+      <input type="search">
+    </p>
+    <p>
+      网址：
+      <input type="url">
+      <!-- 表单HTML5自带校验 -->
+    </p>
+    <p>
+      省份：
+      <input type="text" list="province-list">
+      <datalist id="province-list">
+        <option value="山东">
+        <option value="山西">
+        <option value="广东">
+        <option value="广西">
+        <option value="河南">
+        <option value="河北">
+        <option value="湖南">
+        <option value="湖北">
+      </datalist>
+    </p>
+    <p>
+      <input type="submit" value="提交表单">
+    </p>
+  </form>
+</body>
+
+</html>
