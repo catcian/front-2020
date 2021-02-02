@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex布局</title>
+  <link rel="stylesheet" href="./basic.css">
+  <style>
+    body {
+      display: flex;
+    }
+
+    .slider,
+    .main {
+      height: 100%;
+    }
+
+    .slider {
+      width: 100px;
+      background: black;
+    }
+
+    .main {
+      flex: 1;
+      background: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="slider">slider</div>
+  <div class="main">main</div>
+</body>
+
+</html>
