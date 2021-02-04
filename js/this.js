@@ -15,7 +15,7 @@ console.log('this.js')
 // var story = {
 //   process: 'unknown',
 //   start: function () {
-//     story.process = 'start'
+//     story.process = 'start'// 外部变量名来引用
 //   }
 // }
 

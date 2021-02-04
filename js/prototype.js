@@ -17,20 +17,21 @@ console.log('prototype.js')
 // let cheese = new Food('cheess', 123)
 // console.dir(cheese)
 
-// function doSomething () { }
-// doSomething.prototype.foo = 'bar'
-// // console.dir(doSomething)
-// const doSomethingInstancing = new doSomething()
-// console.dir(doSomethingInstancing)
-// // 实例 proto 属性 等于 其构造函数的 prototype 属性
+function doSomething () { }
+doSomething.prototype.foo = 'bar'
+console.dir(doSomething)
+const doSomethingInstancing = new doSomething()
+console.dir(doSomethingInstancing)
+// 实例 proto 属性 等于 其构造函数的 prototype 属性
 // console.log(doSomethingInstancing.__proto__ === doSomething.prototype)// true
-// doSomethingInstancing.prop = 'some value'
-// console.dir(doSomethingInstancing)
+doSomethingInstancing.prop = 'some value'
+console.dir(doSomethingInstancing)
 
 // 当访问doSomethingInstancing 的一个属性，浏览器首先会在doSomethinInstancing 上查找，如果没有，
 // 浏览器会在doSomethingInstancing.__proto__（也是doSomething.prototype）查找，如果doSomethingInstancing.__proto__存在则会被使用，
 // 如果不存在浏览器会去查找doSomethingInstancing.__proto__.__proto__ 继续查找
 // 默认所有函数的原型属性__proto__ 就是Object.prototype, 如果上面也没有这个属性，返回undefined
+// console.log(doSomething.prototype.__proto__ === Object.prototype)
 
 
 // constructor
@@ -62,23 +63,23 @@ console.log('prototype.js')
 
 
 // subject 1
-var A = function A () { }
-A.prototype.n = 1
-var b = new A()
-console.dir(A)
-console.dir(b)
+// var A = function A () { }
+// A.prototype.n = 1
+// var b = new A()
 // A.prototype = {
 //   n: 2,
 //   m: 3,
 // }
-var c = new A()
-console.dir(c)
-console.dir(b)
-
+// var c = new A()
 // console.log(b.n)// 1
 // console.log(b.m)// undefined
 
 // console.log(c.n)// 2
 // console.log(c.m);// 3
 
-// TODO 为什么 A.prototype 更换指针，指向{n:2, m:3} 根据js执行过程打印为更换指针时候，显示也是更换指针后的结构
+// TODO 为什么 A.prototype 更换指针，指向{n:2, m:3} 根据js执行过程打印为更换指针时候，显示也是更换指针后的结构 console 存了一个快照
+
+// subject 2
+
+var F = function () { }
+console.dir(F)
